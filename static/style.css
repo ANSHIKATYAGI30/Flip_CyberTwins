@@ -1,0 +1,172 @@
+/* Reset some defaults */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header/Navbar */
+header {
+  background-color: #5e0f03;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #ff7eb3, #ff758c);
+  color: white;
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: #ff3c7c;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background: #5e0f03;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.trends ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.trends li {
+  background: #eee;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+/* Meme Generator */
+.generator form, .scheduler form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.generator input, .scheduler textarea, .scheduler input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.generator button, .scheduler button {
+  padding: 10px;
+  border: none;
+  background: #ff3c7c;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.generator button:hover, .scheduler button:hover {
+  background: #5e0f03;
+}
+
+/* Meme Audio Section */
+#memeBox {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+#memeBox h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Meme Buttons */
+.meme-btn {
+    margin: 10px;
+    padding: 12px 25px;
+    background-color: #ff3c7c;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.meme-btn:hover {
+    background-color: #5e0f03;
+    transform: scale(1.05);
+}
+
+
+/* Input Box and Button */
+#memeBox input[type="text"] {
+    width: 10%;
+    height: 30%;
+    padding: 5px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#memeBox button.play-audio {
+    padding: 10px 15px;
+    margin-left: 5px;
+    border: none;
+    background: #333;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#memeBox button.play-audio:hover {
+    background: #5e0f03;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #5e0f03;
+  color: white;
+  padding: 15px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>🔥 Flip</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Trends</a>
+      <a href="#">Generate</a>
+      <a href="#">Schedule</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2> Stay vibin’, never miss the hype!❤</h2>
+    <p>Generate memes, captions, and video ideas tailored to your niche.</p>
+    <button>Start Creating</button>
+  </section>
+
+  <!-- Trending Topics -->
+  <section class="trends">
+    <h2>🔥 Trending Now</h2>
+    <ul>
+      <li>#AI</li>
+      <li>#Gym</li>
+      <li>#Saiyaara</li>
+      <li>#Cricket</li>
+      <li>#TaylorSwiftEngaged!!</li>
+      <li>#ItnaNaMujhseTuPyaar..</li>
+    </ul>
+  </section>
+
+  <!-- Meme Generator -->
+  <section class="generator">
+    <h2>Meme Generator 🎭</h2>
+    <form>
+      <label for="topic">Enter Topic:</label>
+      <input type="text" id="topic" placeholder="e.g., Exams, Monday Blues">
+      <button type="button">Generate Meme</button>
+    </form>
+    <div class="meme-preview">
+      <p>Your generated meme will appear here...</p>
+    </div>
+  </section>
+
+  <!-- Scheduler -->
+  <section class="scheduler">
+    <h2>📅 Schedule Your Post</h2>
+    <form>
+      <label for="postText">Caption:</label>
+      <textarea id="postText" rows="4" placeholder="Enter your caption..."></textarea>
+
+      <label for="date">Select Date:</label>
+      <input type="date" id="date">
+
+      <label for="time">Select Time:</label>
+      <input type="time" id="time">
+
+      <button type="button">Schedule Post</button>
+
+    </form>
+  </section>
+
+  <!-- Funny Meme Audio Buttons -->
+   <div id="memeBox">
+  <h2>🔊 Get the funniest audio for your reels!</h2>
+  <label for="caption">Caption:</label>
+  <input type="text" id="caption" placeholder="Enter the keyword...">
+  <button class="play-audio">Play Audio</button>
+
+  <br><br>
+  <button onclick="playMemeAudio('meme1')" class="meme-btn">Play Meme 1</button>
+  <button onclick="playMemeAudio('meme2')" class="meme-btn">Play Meme 2</button>
+  <button onclick="playMemeAudio('meme3')" class="meme-btn">Play Meme 3</button>
+  <button onclick="playMemeAudio('meme3')" class="meme-btn">Play Meme 4</button>
+
+  <audio id="meme1" src="C:\Users\hp\Desktop\TrendSetter\static\meme_audios\chai_pio_biscuit_khao.mp3"></audio>
+  <audio id="meme2" src="C:\Users\hp\Desktop\TrendSetter\static\meme_audios\laugh.mp3"></audio>
+  <audio id="meme3" src="C:\Users\hp\Desktop\TrendSetter\static\meme_audios\sad_violin.mp3"></audio>
+  <audio id="meme4" src="C:\Users\hp\Desktop\TrendSetter\static\meme_audios\wait-a-minute-who-are-you.mp3"></audio>
+
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© Flip | Built with ❤️ by CYBERTWINS</p>
+  </footer>
+
+</body>
+</html>
