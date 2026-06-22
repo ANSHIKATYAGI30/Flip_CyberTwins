@@ -14,7 +14,11 @@ async function loadTrends() {
 
 // Generate meme caption
 async function generateMeme() {
-    let topic = document.getElementById("topicInput").value;
+    let topic = document.getElementById("topicInput").value.trim();
+    if (!topic) {
+        document.getElementById("memeResult").innerText = "Please enter a topic.";
+        return;
+    }
     let res = await fetch("http://127.0.0.1:5000/api/generate-meme", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
