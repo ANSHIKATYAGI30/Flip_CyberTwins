@@ -56,6 +56,8 @@ function playMemeAudio(memeId) {
 }
 
 // Run on page load
-window.onload = loadTrends;
-window.onload= generateMeme;
-window.onload= displaymeme;
+// Run on page load
+window.addEventListener("load", () => {
+    loadTrends();
+    displaymeme();
+});
