@@ -1,15 +1,28 @@
 ///*** */
 // Fetch trending topics
 async function loadTrends() {
-    let res = await fetch("http://127.0.0.1:5000/api/trends");
-    let data = await res.json();
-    let list = document.getElementById("trendList");
-    list.innerHTML = "";
-    data.trends.forEach(t => {
-        let li = document.createElement("li");
-        li.textContent = `${t.topic} (from ${t.platform})`;
-        list.appendChild(li);
-    });
+    try {
+        const res = await fetch("http://127.0.0.1:5000/api/trends");
+
+        if (!res.ok) {
+            throw new Error(`HTTP ${res.status}`);
+        }
+
+        const data = await res.json();
+        const list = document.getElementById("trendList");
+
+        list.innerHTML = "";
+
+        data.trends.forEach((t) => {
+            const li = document.createElement("li");
+            li.textContent = `${t.topic} (from ${t.platform})`;
+            list.appendChild(li);
+        });
+    } catch (err) {
+        document.getElementById("trendList").innerHTML =
+            "<li>Unable to load trends.</li>";
+        console.error(err);
+    }
 }
 
 // Generate meme caption
